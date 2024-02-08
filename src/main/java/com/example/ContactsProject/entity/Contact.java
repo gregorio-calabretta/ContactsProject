@@ -16,8 +16,15 @@ public class Contact {
     private Long id;
     private String name;
     private String surname;
-    private Date birthday;
+    private String birthday;
 
+    public Contact(String name, String surname, String birthday) {
+        this.name = name;
+        this.surname = surname;
+        this.birthday = birthday;
+    }
 
+    public Contact() {
 
+    }
 }
