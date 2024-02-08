@@ -15,12 +15,12 @@ import java.util.List;
 public class Controller {
     @Autowired
     private ContactService contactService;
-    @GetMapping("/Contacts")
+    @GetMapping("/contacts")
     public List<Contact> getContacts(){
         return contactService.showContact();
     }
 
-    @PostMapping("/Contact")
+    @PostMapping("/contact")
     public Contact postContact(@RequestBody Contact contact){
     return contactService.saveContact(contact);
     }
