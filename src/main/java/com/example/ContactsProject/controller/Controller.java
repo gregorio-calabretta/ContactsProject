@@ -11,7 +11,7 @@ import java.util.List;
 public class Controller {
     @GetMapping("/Contacts")
     public List<Contact> showContacts(){
-        ResponseEntity<>
+        return null;
     }
 
 }
